@@ -65,6 +65,7 @@ VOLUME /home/wineuser/prefix
 
 # Expose Port
 EXPOSE 8080
+EXPOSE 81
 
 ENTRYPOINT ["/usr/bin/supervisord"]
 CMD ["-c", "/etc/supervisor/conf.d/supervisord-normal.conf"]
